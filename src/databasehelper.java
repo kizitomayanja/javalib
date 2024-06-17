@@ -21,6 +21,7 @@ public class databasehelper {
 
     public static Connection connect() {
         Connection conn = null;
+        
         try {
             conn = DriverManager.getConnection(URL);
             System.out.println("Connection to SQLite has been established.");
