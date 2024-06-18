@@ -8,16 +8,16 @@ import java.lang.Class;
 public class databasehelper {
     private static final String URL = "jdbc:sqlite:./SQLitedatabaselib/books.db"; // Path to your SQLite database
 
-    static {
+  /*  static {
         try {
             // Load the SQLite JDBC driver (you must have the SQLite JAR file in your classpath)
             Class.forName("sqlite-jdbc-3.46.0.0.jar");
             System.out.println("SQLite JDBC driver registered.");
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             System.err.println("SQLite JDBC driver not found. Make sure the SQLite JDBC library is included in the classpath.");
             e.printStackTrace();
         }
-    }
+    }*/
 
     public static Connection connect() {
         Connection conn = null;
